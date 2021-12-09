@@ -5,8 +5,7 @@ lines = list(map(lambda x: [(int(x[0]), int(x[1])), (int(x[2]), int(x[3]))], lin
 x_dim = max([max(line[0][0], line[1][0]) for line in lines])
 y_dim = max([max(line[0][1], line[1][1]) for line in lines])
 grid = [[0]*(x_dim+1) for _ in range(y_dim+1)]
-for line in lines:
-    start, end = line
+for start, end in lines:
     dx = end[0] - start[0]
     dy = end[1] - start[1]
     if dx == 0:
