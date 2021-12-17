@@ -1,3 +1,5 @@
+# I realise that there is a much nicer way to go about this using sets but I thought of it as I was hammering out this naive solution so :shrug:
+
 # Parse input
 lines = open('input.txt', 'r').read().splitlines()
 coords = [line.split(",") for line in lines[:lines.index('')]]
